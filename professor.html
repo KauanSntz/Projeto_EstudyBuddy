@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel do Professor • Diário de Estudos</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="topbar-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 6.2c-1.7-1.1-3.8-1.7-6.2-1.7A1.8 1.8 0 0 0 4 6.3v11a1.7 1.7 0 0 0 1.8 1.7c2 0 4 .5 5.7 1.4.3.2.7.2 1 0 1.7-.9 3.7-1.4 5.7-1.4a1.7 1.7 0 0 0 1.8-1.7v-11a1.8 1.8 0 0 0-1.8-1.8c-2.4 0-4.5.6-6.2 1.7Zm-1 11.3A14.2 14.2 0 0 0 6 16.2V6.6c2 0 3.8.5 5 1.5Zm2 0V8.1c1.2-1 3-1.5 5-1.5v9.6c-1.8 0-3.6.5-5 1.3Z" fill="currentColor"/></svg>
+      </div>
+      <div>
+        <h1 class="topbar-title">Diário de Estudos</h1>
+        <p id="professor-greeting" class="topbar-sub">Prof.</p>
+      </div>
+    </div>
+
+    <button id="logout-btn" class="logout-btn" type="button">
+      <svg viewBox="0 0 24 24"><path d="M10 17 5 12l5-5 1.4 1.4L8.8 11H20v2H8.8l2.6 2.6L10 17ZM4 4h8v2H6v12h6v2H4V4Z"/></svg>
+      Sair
+    </button>
+  </header>
+
+  <main class="main">
+    <section class="metrics-grid three">
+      <article class="card metric-card">
+        <p id="metric-alunos" class="metric-value">0</p>
+        <p class="metric-label">Alunos</p>
+      </article>
+      <article class="card metric-card">
+        <p id="metric-registros" class="metric-value">0</p>
+        <p class="metric-label">Registros</p>
+      </article>
+      <article class="card metric-card">
+        <p id="metric-baixa" class="metric-value danger">0</p>
+        <p class="metric-label">Baixa frequência</p>
+      </article>
+    </section>
+
+    <section class="banner">
+      <h3>Baixa Frequência <small>(&lt;3 registros nos últimos 7 dias)</small></h3>
+      <div id="low-frequency-chips" class="chips"></div>
+    </section>
+
+    <section style="margin-bottom:28px;">
+      <h2 class="section-title">Alunos</h2>
+      <div id="students-accordion" class="accordion"></div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Dificuldades Recentes</h2>
+      <div id="recent-difficulties" class="recent-list"></div>
+    </section>
+  </main>
+
+  <script src="assets/js/storage.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/guards.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/professor.js"></script>
+</body>
+</html>

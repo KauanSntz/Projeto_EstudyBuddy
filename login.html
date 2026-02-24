@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login • Diário de Estudos</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <main class="page-center">
+    <section class="auth-wrap">
+      <header class="brand-block">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 6.2c-1.7-1.1-3.8-1.7-6.2-1.7A1.8 1.8 0 0 0 4 6.3v11a1.7 1.7 0 0 0 1.8 1.7c2 0 4 .5 5.7 1.4.3.2.7.2 1 0 1.7-.9 3.7-1.4 5.7-1.4a1.7 1.7 0 0 0 1.8-1.7v-11a1.8 1.8 0 0 0-1.8-1.8c-2.4 0-4.5.6-6.2 1.7Zm-1 11.3A14.2 14.2 0 0 0 6 16.2V6.6c2 0 3.8.5 5 1.5Zm2 0V8.1c1.2-1 3-1.5 5-1.5v9.6c-1.8 0-3.6.5-5 1.3Z" fill="currentColor"/></svg>
+        </div>
+        <h1 class="brand-title">Diário de Estudos</h1>
+        <p class="brand-subtitle">Entre na sua conta</p>
+      </header>
+
+      <section class="card auth-card">
+        <form id="login-form" novalidate>
+          <div id="login-error" class="form-error"></div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input class="input" id="email" name="email" type="email" placeholder="seu@email.com" required />
+          </div>
+
+          <div class="field">
+            <label for="password">Senha</label>
+            <input class="input" id="password" name="password" type="password" required />
+          </div>
+
+          <button class="btn" type="submit">
+            <svg viewBox="0 0 24 24"><path d="M10 17 5 12l5-5 1.4 1.4L8.8 11H20v2H8.8l2.6 2.6L10 17Z"/></svg>
+            Entrar
+          </button>
+
+          <p class="auth-link">Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <script src="assets/js/storage.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/guards.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/login.js"></script>
+</body>
+</html>
