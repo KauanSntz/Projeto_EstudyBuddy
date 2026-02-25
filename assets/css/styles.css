@@ -315,3 +315,27 @@ h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; }
   .metrics-grid.three,
   .two-cols { grid-template-columns: 1fr; }
 }
+
+
+.field-error {
+  display: block;
+  min-height: 18px;
+  margin-top: 6px;
+  color: var(--danger);
+  font-size: 0.9rem;
+}
+
+.modal-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.btn-secondary {
+  background: #e8edf3;
+  color: #29405f;
+}
+
+.btn-secondary:hover {
+  background: #dde5ee;
+}

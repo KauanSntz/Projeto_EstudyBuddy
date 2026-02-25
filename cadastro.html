@@ -24,6 +24,7 @@
           <div class="field">
             <label for="name">Nome</label>
             <input class="input" id="name" name="name" type="text" required />
+            <small id="name-error" class="field-error"></small>
           </div>
 
           <div class="field">
@@ -32,16 +33,25 @@
               <option value="estudante">Estudante</option>
               <option value="professor">Professor</option>
             </select>
+            <small id="role-error" class="field-error"></small>
           </div>
 
           <div class="field">
             <label for="email">Email</label>
             <input class="input" id="email" name="email" type="email" required />
+            <small id="email-error" class="field-error"></small>
           </div>
 
           <div class="field">
             <label for="password">Senha</label>
             <input class="input" id="password" name="password" type="password" minlength="6" required />
+            <small id="password-error" class="field-error"></small>
+          </div>
+
+          <div class="field">
+            <label for="confirm-password">Confirmar senha</label>
+            <input class="input" id="confirm-password" name="confirm_password" type="password" minlength="6" required />
+            <small id="confirm-password-error" class="field-error"></small>
           </div>
 
           <button class="btn" type="submit">
